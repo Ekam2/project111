@@ -1,0 +1,86 @@
+<html>
+
+<head>
+  <title>Emotion To Emoji</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <center>
+      <h3 style="font-size: 35px; color: black; cursor: pointer; background-color: rgb(131, 58, 180);" id="h3" class="btn btn-info heading">𝑯𝒂𝒏𝒅 𝑮𝒆𝒔𝒕𝒖𝒓𝒆𝒔 𝑻𝒐 𝑬𝒎𝒐𝒋𝒊 𝑨𝒑𝒑
+
+        <br>
+
+        <span>&#128076;</span>
+        <span>&#128077;</span>
+        <span>&#9996;</span>
+        <span>&#9994;</span>
+        <span>&#128079;</span>
+        <span>&#129304;</span>
+      </h3>
+
+      <br><br>
+      <marquee id="marqueestyle" style="font-size: 25px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: red; border-radius: 5px;"onmouseover="this.stop();" onmouseout="this.start();">Take a selfie of a gesture to know about it's meaning</marquee>    
+      <marquee id="marqueestyle" style="font-size: 25px; font-family: cursive; color: black; border-radius: 5px;"onmouseover="this.stop();" onmouseout="this.start();">On the following gestures the model is trained -</marquee>    
+    </marquee>
+      
+      <marquee onmouseover="stop()" onmouseout="start()">  
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <span>&#128076;</span>
+        <span>&#128077;</span>
+        <span>&#9996;</span>
+        <span>&#9994;</span>
+        <span>&#128079;</span>
+        <span>&#129304;</span>
+        <span>&#128075;</span>
+        </marquee>
+
+        <br><br> 
+
+        
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <button style="font-size: 25px;  border-radius: 5px; background-color: rgb(25,63,127); color: black;" id="w"> 𝑾𝑬𝑩𝑪𝑨𝑴 𝑽𝑰𝑬𝑾 - </button>
+          <br><br>
+          <div id="camera"></div>
+          <br><br>
+          <button style="font-size: 22px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; background-color: rgb(251,63,181);" onclick="take_snapshot()" id="ci">Capture Image</button>
+        </div>
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <br><br><br>
+          <button style="font-size: 25px;  border-radius: 5px; background-color: rgb(25,63,127); color: black;" id="p"> 𝑷𝑹𝑬𝑫𝑰𝑪𝑻𝑰𝑶𝑵 - </button>
+          <br><br>
+          <p class="gesture_name" id="result_gesture_name"></p>
+          <br><br>
+          <p class="gesture" id="update_gesture"></p>
+        </div>
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <button style="font-size: 25px;  border-radius: 5px; background-color: rgb(25,63,127); color: black;" id="s"> 𝑺𝑵𝑨𝑷𝑺𝑯𝑶𝑻 - </button>
+          <br><br>
+          <div id="result"></div>
+          <br><br>
+          <button style="font-size: 22px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; background-color: rgb(251,122,63);" onclick="take_snapshot()" id="pi">Predicted image</button>
+        </div>
+
+    </center>
+
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+body
+{
+  color: white;
+  background: rgb(195,34,89);
+  background: radial-gradient(circle, rgba(195, 34, 89, 1) 0%, rgba(220,255,29,1) 98%);
+}
+span
+{
+  font-size: 30px;
+}
+#camera , #result
+{
+  border: 2px dashed black;
+  width: 380px;
+  height: 220px; 
+}
+#result_gesture_name 
+{
+  color: black;
+}
+
+#ci:hover {
+  border-radius: 3px;
+  background: linear-gradient(90deg, rgba(251,63,181,1) 0%, rgba(218,252,70,1) 100%);
+}
+
+#pi:hover {
+  border-radius: 3px;
+  background: linear-gradient(90deg, rgba(251,122,63,1) 0%, rgba(70,252,100,1) 100%);
+}
+
+#p:hover {
+  background: linear-gradient(90deg, rgba(251,63,127,1) 0%, rgba(70,212,252,1) 100%);
+}
+
+#s:hover {
+  background: linear-gradient(90deg, rgba(251,63,127,1) 0%, rgba(70,212,252,1) 100%);
+}
+
+#w:hover {
+  background: linear-gradient(90deg, rgba(251,63,127,1) 0%, rgba(70,212,252,1) 100%);
+}
+
+.gesture_name
+{
+  font-size: 40px;
+}
+
+.gesture{
+font-size: 48px;
+}
+
+#h3:hover {
+  background: linear-gradient( yellow, aliceblue, violet)
+}
